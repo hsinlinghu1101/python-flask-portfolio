@@ -1,0 +1,122 @@
+body {
+ font-family: 'Raleway', sans-serif;
+ margin-left:auto;
+ margin-right:auto;
+ text-align:center;
+}
+ul {
+ float: right;
+ list-style-type: none;
+}
+
+li {
+  display:inline;
+  padding: 20px;
+}
+a {
+ text-decoration: none;
+}
+header{
+  margin-bottom: 20px;
+  height:40px;
+}
+.home{
+  display:flex;
+  justify-content:center;
+  height:350px;
+  color:white;
+  margin:80px;
+}
+.title{
+ align-self:center;
+ margin-left: -40px;
+ z-index:2;
+}
+.name{
+ padding:15px;
+ font-family: 'Shrikhand', cursive;
+ background-color:rgb(135,159,132);
+
+}
+
+.myImg {
+ border-radius:50%;
+ width: 300px;
+ margin-left: 50px;
+ display:inline-block;
+ z-index:1;
+}
+
+.shadow {
+ width: 300px;
+ height:300px;
+ border-radius:50%;
+ background-color:rgba(135,159,132,0.5);
+ margin-top: 25px;
+ position:absolute;
+ z-index:-1;
+}
+
+.aboutImg{
+ width: 100%;
+ z-index:-2;
+ opacity: 0.8;
+ left:0;
+ opacity: 0.7;
+ position:absolute;
+}
+
+.aboutCon{
+ font-size:16px;
+ color:white;
+ display:flex;
+ z-index:1;
+ justify-content:space-around;
+}
+.content{
+  width:500px;
+  padding:30px;
+  line-height: 30px;
+  background-color:rgba(35,79,30,0.7);
+}
+
+.skills{
+  width:500px;
+  padding:30px;
+  background-color:rgba(135,159,132,0.8);
+}
+
+.imgSkill{
+ width:100%;
+}
+
+#project{
+  margin:50px;
+  color:rgb(35,79,30);
+}
+.project2{
+ margin:30px;
+}
+.p-all1{
+ display:flex;
+ justify-content:flex-start;
+}
+.p-all2{
+ display:flex;
+ justify-content:flex-end;
+}
+
+.p-img{
+ width:500px;
+ margin-right: 50px;
+}
+.overlay{
+ width:500px;
+ text-align: justify
+}
+.tech{
+ display:inline-block;
+}
+.conImg{
+ width:100%;
+}

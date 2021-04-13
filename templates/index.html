@@ -1,0 +1,106 @@
+<!doctype html>
+    <head>
+        <title>Hsin Ling Hu</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+      <header>
+       <ul>
+           <li><a href="#about">About</a></li>
+           <li><a href="#project">Project</a></li>
+           <li><a href="#contact">Contact</a></li>
+       </ul>
+      </header>
+      <img class="aboutImg" src="/static/images/grass.jpg" alt="About Background" />
+      <div class="home">
+       <div class="picture">
+       <div class="shadow"></div>
+       <img class="myImg" src="/static/images/personal.jpg" alt="Profile Image"/>
+       </div>
+       <div class="title">
+       <h1 class="name">Hsin Ling Hu</h1>
+       <h3 class="role">Full-Stack Developer</h3>
+       </div>
+      </div>
+
+        <section id="about">
+            <div class="aboutCon">
+                <div class="content">
+                    <h2>About Me</h2>
+                    <p>I am a Greater Los Angeles based Full Stack Developer focused on crafting clean
+                        & user-friendly experience.
+                    </p>
+                    <p>I was born and raised in Taiwan. My interests include outdoor activities, sports, a healthy diet, and movies.
+                        I get personal satisfaction from solving what initially seemed like an unsolvable coding problem and it energizes me to become better and better.
+                    </p>
+                    <p>I  wish to be part of the team where teammates desire to unselfishly share their knowledge and help other developers improve. I strive to help teammates when they get stuck and take criticism well because I value team achievement more than personal.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h2>My Skill</h2>
+                    <img  class="imgSkill" src="/static/images/skills2.png" alt="My Skills" />
+                </div>
+            </div>
+        </section>
+        <section id='project' class='thin project1'>
+            <section class='thin project2'>
+                <div class='p-all1'>
+                    <img class='p-img' src="/static/images/sleep.png" alt="sleep-time-tracker project">
+                    <div class='pro'>
+                        <h2>Project - Sleep Time Tracker</h2>
+                        <p class="overlay">Have you waken up in the morning and felt restless? Did you wonder what was the length of your sleep yesterday? Or a day before?
+                            Sleep time tracker is here to help! It calculates users' total hours of sleep and displays a message based on users' age and sleep hours.
+                            This app is for users who want to track their daily sleep hours.
+                            <span class="tech"><em>--HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL, Knex, Mocha, Chai, Jest</em></span>
+                        </p>
+                        <a href="https://sleep-time-tracker.now.sh" target="_blank" class='btn btn1 three'>Live Page</a>
+                        <a href="https://github.com/hsinlinghu1101/Sleep-time-tracker-app.git" target="_blank" class='btn btn2 '>Github client</a>
+                        <a href="https://github.com/hsinlinghu1101/Sleep-time-tracker-server.git" target="_blank" class='btn btn2 '>Github server</a>
+                    </div>
+                </div>
+            </section>
+            <section class='thin project2'>
+                <div class='p-all2'>
+                    <img class='p-img' src="/static/images/sermos.png" alt="sermo project">
+                    <div class='pro third'>
+                        <h2>Project - Sermo</h2>
+                        <p class="overlay">Sermo is an app for learning new languages using spaced-repetition. App provides the user with a total of 10 words in Mandarine language one word at a time requesting the user to type the English translation.
+                            The words appear more often when guessed incorrectly, and appear less often when guessed correctly. Users can create an account and keep track of their progress. It’s for users who want to learn the Mandarin language.
+                            <span class="tech"><em>--HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL, Cypress</em></span>
+                        </p>
+                        <a href="https://sermo.now.sh" target="_blank" class='btn btn1 three'>Live Page</a>
+                        <a href="https://github.com/thinkful-ei-leopard/spaced-repetition-client-daniel-hsin" target="_blank" class='btn btn2 '>Github client</a>
+                        <a href="https://github.com/thinkful-ei-leopard/spaced-repetition-server-hsin-daniel" target="_blank" class='btn btn2 '>Github server</a>
+                    </div>
+                </div>
+            </section>
+            <section class='thin project2'>
+                <div class='p-all1'>
+                    <img class='p-img' src="/static/images/memes.png" alt="Memestagram project">
+                    <div class='pro third'>
+                        <h2>Project - Memestagram</h2>
+                        <p class="overlay">Memes are one of the greatest symbols of social media so we built Memestagram as a memes only platform.
+                            Users are able to create, share, and search for interesting memes and looks that are available on the platform.
+                            It’s for users who are interested in memes.
+                            <span class="tech"><em>--HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL, Cloudinary</em></span>
+                        </p>
+                        <a href="https://memestagram.now.sh/" target="_blank" class='btn btn1 three'>Live Page</a>
+                        <a href="https://github.com/thinkful-ei-leopard/memestagram-client.git" target="_blank" class='btn btn2 '>Github client</a>
+                        <a href="https://github.com/thinkful-ei-leopard/memestagram-api.git" target="_blank" class='btn btn2 '>Github server</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <img class="conImg" src="/static/images/flowers2.jpg" alt="Contact Me">
+        </section>
+    </body>
+</html>
+
+<!--Photo by eberhard grossgasteiger from Pexels-->
+<!--Photo by Pok Rie from Pexels-->
