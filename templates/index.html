@@ -47,11 +47,15 @@
             </div>
         </section>
         <section id='project' class='thin project1'>
+            <div class="proHead">
+            <h2 class="proTitle">Project</h2>
+            <img  class="proImg" src="/static/images/project.png" alt="project">
+            </div>
             <section class='thin project2'>
                 <div class='p-all1'>
                     <img class='p-img' src="/static/images/sleep.png" alt="sleep-time-tracker project">
                     <div class='pro'>
-                        <h2>Project - Sleep Time Tracker</h2>
+                        <h2>Sleep Time Tracker</h2>
                         <p class="overlay">Have you waken up in the morning and felt restless? Did you wonder what was the length of your sleep yesterday? Or a day before?
                             Sleep time tracker is here to help! It calculates users' total hours of sleep and displays a message based on users' age and sleep hours.
                             This app is for users who want to track their daily sleep hours.
@@ -67,7 +71,7 @@
                 <div class='p-all2'>
                     <img class='p-img' src="/static/images/sermos.png" alt="sermo project">
                     <div class='pro third'>
-                        <h2>Project - Sermo</h2>
+                        <h2>Sermo</h2>
                         <p class="overlay">Sermo is an app for learning new languages using spaced-repetition. App provides the user with a total of 10 words in Mandarine language one word at a time requesting the user to type the English translation.
                             The words appear more often when guessed incorrectly, and appear less often when guessed correctly. Users can create an account and keep track of their progress. It’s for users who want to learn the Mandarin language.
                             <span class="tech"><em>--HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL, Cypress</em></span>
@@ -82,7 +86,7 @@
                 <div class='p-all1'>
                     <img class='p-img' src="/static/images/memes.png" alt="Memestagram project">
                     <div class='pro third'>
-                        <h2>Project - Memestagram</h2>
+                        <h2>Memestagram</h2>
                         <p class="overlay">Memes are one of the greatest symbols of social media so we built Memestagram as a memes only platform.
                             Users are able to create, share, and search for interesting memes and looks that are available on the platform.
                             It’s for users who are interested in memes.
@@ -96,8 +100,24 @@
             </section>
         </section>
         <section id="contact">
-            <h2>Contact Me</h2>
-            <img class="conImg" src="/static/images/flowers2.jpg" alt="Contact Me">
+            <img class="conImg" src="/static/images/flowers3.jpg" alt="Contact Me">
+            <div class="conText">
+                <div ><img class='message' src="/static/images/contact.png" alt="message"><h2 class="conTitle">Contact Me</h2></div>
+                {% if msg_sent %}
+                <h2>You have successfully submitted your message!</h2>
+                {% endif %}
+                <form action="/" method="post">
+                     <label for="name">Your Name</label>
+                     <input type="text" placeholder="Your Name" id="name" name="name" required>
+                     <label for="email">Your Email</label>
+                     <input type="email" placeholder="Your Email" name="email" id="email" required>
+                     <label for="message">Your Message</label>
+                     <textarea type="text" placeholder="Your Message" name="message" id="message" required></textarea>
+                     <button type="submit">Submit</button>
+                </form>
+
+
+            </div>
         </section>
     </body>
 </html>
