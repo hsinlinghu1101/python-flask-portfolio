@@ -2,54 +2,55 @@
     <head>
         <title>Hsin Ling Hu</title>
         <meta charset="utf-8" />
+        {{ fontawesome_html() }}
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.8/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
     </head>
     <body>
       <header>
        <ul>
-           <li><a href="#about">About</a></li>
-           <li><a href="#project">Project</a></li>
-           <li><a href="#contact">Contact</a></li>
+           <li><a href="#about">About<i class="fas fa-address-card"></i></a></li>
+           <li><a href="#project">Project<i class="fas fa-pencil-ruler"></i></a></li>
+           <li><a href="#contact">Contact<i class="fas fa-paper-plane"></i></a></li>
        </ul>
       </header>
-      <img class="aboutImg" src="/static/images/grass.jpg" alt="About Background" />
-      <div class="home">
-       <div class="picture">
-       <div class="shadow"></div>
-       <img class="myImg" src="/static/images/personal.jpg" alt="Profile Image"/>
-       </div>
-       <div class="title">
-       <h1 class="name">Hsin Ling Hu</h1>
-       <h3 class="role">Full-Stack Developer</h3>
-       </div>
-      </div>
-
-        <section id="about">
-            <div class="aboutCon">
-                <div class="content">
-                    <h2>About Me</h2>
-                    <p>I am a Greater Los Angeles based Full Stack Developer focused on crafting clean
-                        & user-friendly experience.
-                    </p>
-                    <p>I was born and raised in Taiwan. My interests include outdoor activities, sports, a healthy diet, and movies.
-                        I get personal satisfaction from solving what initially seemed like an unsolvable coding problem and it energizes me to become better and better.
-                    </p>
-                    <p>I  wish to be part of the team where teammates desire to unselfishly share their knowledge and help other developers improve. I strive to help teammates when they get stuck and take criticism well because I value team achievement more than personal.
-                    </p>
+      <section id="about">
+          <img class="aboutImg" src="/static/images/grass.jpg" alt="About Background" />
+          <div class="home">
+               <div class="picture">
+               <div class="shadow"></div>
+               <img class="myImg" src="/static/images/personal.jpg" alt="Profile Image"/>
+           </div>
+           <div class="title">
+               <h1 class="name">Hsin Ling Hu</h1>
+               <h3 class="role">Full-Stack Developer</h3>
+           </div>
+          </div>
+          <div class="aboutCon">
+             <div class="content">
+                <h2>About Me</h2>
+                <p>I am a Greater Los Angeles based Full Stack Developer focused on crafting clean
+                    & user-friendly experience.
+                </p>
+                <p>I was born and raised in Taiwan. My interests include outdoor activities, sports, a healthy diet, and movies.
+                    I get personal satisfaction from solving what initially seemed like an unsolvable coding problem and it energizes me to become better and better.
+                </p>
+                <p>I  wish to be part of the team where teammates desire to unselfishly share their knowledge and help other developers improve. I strive to help teammates when they get stuck and take criticism well because I value team achievement more than personal.
+                </p>
                 </div>
-                <div class="skills">
-                    <h2>My Skill</h2>
-                    <img  class="imgSkill" src="/static/images/skills2.png" alt="My Skills" />
-                </div>
-            </div>
+             <div class="skills">
+                <h2>My Skill</h2>
+                <img  class="imgSkill" src="/static/images/skills2.png" alt="My Skills" />
+             </div>
+          </div>
         </section>
-        <section id='project' class='thin project1'>
+        <section id='project' >
             <div class="proHead">
-            <h2 class="proTitle">Project</h2>
-            <img  class="proImg" src="/static/images/project.png" alt="project">
+                <h2 class="proTitle">Project</h2>
+                <img  class="proImg" src="/static/images/project.png" alt="project">
             </div>
             <section class='thin project2'>
                 <div class='p-all1'>
@@ -61,9 +62,11 @@
                             This app is for users who want to track their daily sleep hours.
                             <span class="tech"><em>--HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL, Knex, Mocha, Chai, Jest</em></span>
                         </p>
-                        <a href="https://sleep-time-tracker.now.sh" target="_blank" class='btn btn1 three'>Live Page</a>
-                        <a href="https://github.com/hsinlinghu1101/Sleep-time-tracker-app.git" target="_blank" class='btn btn2 '>Github client</a>
-                        <a href="https://github.com/hsinlinghu1101/Sleep-time-tracker-server.git" target="_blank" class='btn btn2 '>Github server</a>
+                        <div class="links">
+                            <a href="https://sleep-time-tracker.now.sh" target="_blank" class='btn btn1'>Live Page</a>
+                            <a href="https://github.com/hsinlinghu1101/Sleep-time-tracker-app.git" target="_blank" class='btn btn2 '>Github client</a>
+                            <a href="https://github.com/hsinlinghu1101/Sleep-time-tracker-server.git" target="_blank" class='btn btn2 '>Github server</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -76,9 +79,11 @@
                             The words appear more often when guessed incorrectly, and appear less often when guessed correctly. Users can create an account and keep track of their progress. It’s for users who want to learn the Mandarin language.
                             <span class="tech"><em>--HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL, Cypress</em></span>
                         </p>
-                        <a href="https://sermo.now.sh" target="_blank" class='btn btn1 three'>Live Page</a>
-                        <a href="https://github.com/thinkful-ei-leopard/spaced-repetition-client-daniel-hsin" target="_blank" class='btn btn2 '>Github client</a>
-                        <a href="https://github.com/thinkful-ei-leopard/spaced-repetition-server-hsin-daniel" target="_blank" class='btn btn2 '>Github server</a>
+                        <div class="links">
+                            <a href="https://sermo.now.sh" target="_blank" class='btn btn1'>Live Page</a>
+                            <a href="https://github.com/thinkful-ei-leopard/spaced-repetition-client-daniel-hsin" target="_blank" class='btn btn2 '>Github client</a>
+                            <a href="https://github.com/thinkful-ei-leopard/spaced-repetition-server-hsin-daniel" target="_blank" class='btn btn2 '>Github server</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -92,9 +97,11 @@
                             It’s for users who are interested in memes.
                             <span class="tech"><em>--HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL, Cloudinary</em></span>
                         </p>
-                        <a href="https://memestagram.now.sh/" target="_blank" class='btn btn1 three'>Live Page</a>
-                        <a href="https://github.com/thinkful-ei-leopard/memestagram-client.git" target="_blank" class='btn btn2 '>Github client</a>
-                        <a href="https://github.com/thinkful-ei-leopard/memestagram-api.git" target="_blank" class='btn btn2 '>Github server</a>
+                        <div class="links">
+                            <a href="https://memestagram.now.sh/" target="_blank" class='btn btn1'>Live Page</a>
+                            <a href="https://github.com/thinkful-ei-leopard/memestagram-client.git" target="_blank" class='btn btn2 '>Github client</a>
+                            <a href="https://github.com/thinkful-ei-leopard/memestagram-api.git" target="_blank" class='btn btn2 '>Github server</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -103,14 +110,24 @@
             <img class="conImg" src="/static/images/flowers3.jpg" alt="Contact Me">
             <div class="conText">
                 <div ><img class='message' src="/static/images/contact.png" alt="message"><h2 class="conTitle">Contact Me</h2></div>
-                {% if msg_sent %}
-                <h2>You have successfully submitted your message!</h2>
-                {% endif %}
+                  {% if msg_sent %}
+                     <h2 class="greeting" >You have successfully submitted your message!</h2>
+                  {% else %}
+                     <h2 class="greeting">Hi there! I'd like to hear from you :)</h2>
+                  {% endif %}
                 <form action="/" method="post">
-                     <label for="name">Your Name</label>
-                     <input type="text" placeholder="Your Name" id="name" name="name" required>
-                     <label for="email">Your Email</label>
-                     <input type="email" placeholder="Your Email" name="email" id="email" required>
+                    <div class="c_ne">
+                     <div class="c_name">
+                         <label for="name">Your Name</label>
+                         <input type="text" placeholder="Your Name" id="name" name="name" required>
+                     </div>
+                     <div class="c_email">
+                         <label for="email">Your Email</label>
+                         <input type="email" placeholder="Your Email" name="email" id="email" required>
+                     </div>
+                    </div>
+                     <label for="subject">Subject</label>
+                     <input type="text" placeholder="Subject" name="subject" id="subject" required>
                      <label for="message">Your Message</label>
                      <textarea type="text" placeholder="Your Message" name="message" id="message" required></textarea>
                      <button type="submit">Submit</button>
@@ -119,6 +136,12 @@
 
             </div>
         </section>
+        <footer>
+            <a class="social" href="https://www.linkedin.com/in/hsinlinghu/" target="_blank" aria-label="Linkedin"><img src="/static/images/linkedin.png" alt="linkedin"></a>
+            <a class="social" href="https://github.com/hsinlinghu1101" target="_blank" aria-label="Github"><img src="/static/images/github.png" alt="github"></a>
+            <a class="social" href="mailto:hsinkava11@gmail.com" target="_blank" aria-label="Email"><img src="/static/images/gmail.png" alt="gmail"></a>
+            <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        </footer>
     </body>
 </html>
 
